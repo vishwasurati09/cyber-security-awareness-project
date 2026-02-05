@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Security Terminal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>CYBER SECURITY TERMINAL</h1>
+<p class="blink">>> SYSTEM ONLINE | UNAUTHORIZED ACCESS PROHIBITED</p>
+
+<form method="post">
+    <input type="text" name="username" placeholder="Enter your name" required>
+
+    <label><input type="checkbox" name="q1"> Reuse same password</label>
+    <label><input type="checkbox" name="q2"> Click unknown links</label>
+    <label><input type="checkbox" name="q3"> No antivirus installed</label>
+    <label><input type="checkbox" name="q4"> Public Wi-Fi without VPN</label>
+
+    <button type="submit">RUN SECURITY SCAN</button>
+</form>
+
+{% if result %}
+    <h2>>> USER : {{ name }}</h2>
+    <h3>>> SYSTEM STATUS : {{ result }}</h3>
+{% endif %}
+
+<hr>
+
+<h2>>> COMMON CYBER ATTACKS</h2>
+<ul>
+    <li>Phishing – Fake emails & links</li>
+    <li>Malware – Harmful software attack</li>
+    <li>Ransomware – Encrypts user data</li>
+    <li>Brute Force – Password guessing attack</li>
+    <li>SQL Injection – Database exploitation</li>
+</ul>
+
+<h2>>> CYBER SECURITY TOOLS</h2>
+<ul>
+    <li>Nmap – Network scanning tool</li>
+    <li>Wireshark – Packet analysis</li>
+    <li>Metasploit – Penetration testing</li>
+    <li>Burp Suite – Web security testing</li>
+    <li>Kali Linux – Security OS</li>
+</ul>
+
+<h2>>> CYBER LAWS & ACTS (INDIA)</h2>
+<ul>
+    <li>IT Act 2000 – Cyber crime law</li>
+    <li>Section 43 – Unauthorized access</li>
+    <li>Section 66 – Hacking related crimes</li>
+    <li>Data Protection & Privacy rules</li>
+</ul>
+
+<h2>>> DO's & DON'Ts</h2>
+<p>> DO use strong passwords</p>
+<p>> DO enable Two-Factor Authentication</p>
+<p>> DON'T click suspicious links</p>
+<p>> DON'T share OTP or personal data</p>
+
+<h2>>> CYBER CRIME HELPLINE</h2>
+<p>> India Cyber Crime Portal: 1930</p>
+<p>> Website: cybercrime.gov.in</p>
+
+<h2>>> SYSTEM LOG</h2>
+<p>> Scanning open ports...</p>
+<p>> Monitoring network traffic...</p>
+<p>> Firewall status: ACTIVE</p>
+<p>> No critical threat detected</p>
+
+</div>
+
+</body>
+</html>

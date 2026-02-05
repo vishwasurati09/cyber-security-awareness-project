@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+}
+
+.container {
+    width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    background-color: #050505;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    text-shadow: 0 0 8px #00ff00;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    background: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 6px 0;
+}
+
+input[type="checkbox"] {
+    accent-color: #00ff00;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #00ff00;
+    color: black;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+ul {
+    list-style-type: ">> ";
+    padding-left: 20px;
+}
+
+hr {
+    border: 1px solid #00ff00;
+}
+
+.blink {
+    text-align: center;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
