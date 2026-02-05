@@ -8,14 +8,18 @@ The system analyzes user cyber security behavior through a simple questionnaire
 and categorizes the risk level as Low, Medium, or High. It also educates users
 about common cyber attacks, security tools, cyber laws, and best practices.
 
-## Project Screenshots
+## 🖥️ Project Screenshots
 
 <p align="center">
-  <img src="images/screenshot1.png" width="700">
+  <img src="screenshots/home.png" width="250" alt="Home Page">
+  <img src="screenshots/info.png" width="250" alt="Information Page">
+  <img src="screenshots/result.png" width="250" alt="Result Page">
 </p>
 
 <p align="center">
-  <img src="images/screenshot2.png" width="700">
+  <b>Home</b> &nbsp;&nbsp;&nbsp;
+  <b>Information</b> &nbsp;&nbsp;&nbsp;
+  <b>Result</b>
 </p>
 
 ## Features
